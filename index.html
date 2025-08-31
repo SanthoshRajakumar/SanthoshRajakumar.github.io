@@ -2,74 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>YOUR NAME – Portfolio</title>
+  <title>Santhosh Rajakumar — Bioinformatics & ML</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Bioinformatics & ML portfolio showcasing projects, skills, and publications." />
-  <meta property="og:title" content="YOUR NAME – Portfolio" />
-  <meta property="og:description" content="Projects, skills, and publications." />
-  <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Santhosh Rajakumar — MSc Bioinformatics. Genomic & transcriptomic analysis, NGS pipelines, ML for healthcare." />
+  <meta property="og:title" content="Santhosh Rajakumar — Bioinformatics & ML" />
+  <meta property="og:description" content="MSc Bioinformatics student. Omics analysis, pipelines, and reproducible research." />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header class="container">
+  <header class="site-header container">
+    <a class="brand" href="/">Santhosh Rajakumar</a>
     <nav class="nav">
-      <a class="logo" href="/">YOUR NAME</a>
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <a href="/projects.html">Projects</a>
+      <a href="/publications.html">Publications</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/SanthoshRajakumar" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/santhosh-rajakumar-b9815b219" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
-    <section class="hero">
-      <h1>Hi, I’m YOUR NAME</h1>
-      <p>Bioinformatics & Machine Learning • Omics analysis • Reproducible pipelines</p>
-      <p><a class="btn" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
-         <a class="btn outline" href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a></p>
-    </section>
   </header>
 
   <main class="container">
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Project Title</h3>
-          <p>One-line value proposition. What it does and why it matters.</p>
-          <ul class="meta">
-            <li>Python</li><li>R</li><li>NGS</li>
-          </ul>
-          <p>
-            <a href="https://github.com/YOUR_USERNAME/REPO" target="_blank" rel="noopener">Code ↗</a>
-            <a href="https://demo-or-paper-link" target="_blank" rel="noopener">Demo/Paper ↗</a>
-          </p>
-        </article>
-
-        <!-- Duplicate <article> blocks for more projects -->
-      </div>
+    <section class="hero">
+      <h1>Hi — I’m <strong>Santhosh Rajakumar</strong></h1>
+      <p class="lead">MSc Bioinformatics (Uppsala University). I build reproducible NGS pipelines, analyze multi-omics data, and apply ML to biological problems.</p>
+      <p>
+        <a class="btn" href="/projects.html">See Projects</a>
+        <a class="btn outline" href="/publications.html">Publications</a>
+      </p>
     </section>
 
-    <section id="about">
+    <section id="featured" class="featured-projects">
+      <h2>Featured projects</h2>
+      <div id="featured-grid" class="grid"></div>
+      <p><a href="/projects.html">View all projects →</a></p>
+    </section>
+
+    <section id="about" class="about">
       <h2>About</h2>
-      <p>Short bio: your focus areas, current role/degree, and what you’re looking for.</p>
+      <p>Results-driven Bioinformatics Analyst experienced with WGS, RNA-seq, Nextflow pipelines, and HPC. Comfortable with R, Python, Docker, and Git. Current MSc Bioinformatics student (Uppsala University) — Master's thesis at Karolinska Institutet.</p>
       <ul>
-        <li>MSc Bioinformatics, Uppsala University (2025)</li>
-        <li>Skills: Python, R, Pandas, scikit-learn, Docker, Git, Linux</li>
-        <li>Interests: multi-omics, biomarkers, ML for healthcare</li>
+        <li>Email: <a href="mailto:santhosh235200@gmail.com">santhosh235200@gmail.com</a></li>
+        <li>Phone: +46 734914857</li>
+        <li>Location: Uppsala / Sweden</li>
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
+      <p>If you'd like me to share a code walkthrough or dataset, email me or open an issue on GitHub.</p>
     </section>
   </main>
 
-  <footer class="container">
-    <small>© <span id="year"></span> YOUR NAME. All rights reserved.</small>
+  <footer class="container footer">
+    <small>© <span id="year"></span> Santhosh Rajakumar — <a href="/publications.html">Publications</a> • <a href="https://github.com/SanthoshRajakumar">GitHub</a></small>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="/scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
