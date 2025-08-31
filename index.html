@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>YOUR NAME – Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Bioinformatics & ML portfolio showcasing projects, skills, and publications." />
+  <meta property="og:title" content="YOUR NAME – Portfolio" />
+  <meta property="og:description" content="Projects, skills, and publications." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="logo" href="/">YOUR NAME</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <h1>Hi, I’m YOUR NAME</h1>
+      <p>Bioinformatics & Machine Learning • Omics analysis • Reproducible pipelines</p>
+      <p><a class="btn" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+         <a class="btn outline" href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a></p>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project Title</h3>
+          <p>One-line value proposition. What it does and why it matters.</p>
+          <ul class="meta">
+            <li>Python</li><li>R</li><li>NGS</li>
+          </ul>
+          <p>
+            <a href="https://github.com/YOUR_USERNAME/REPO" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://demo-or-paper-link" target="_blank" rel="noopener">Demo/Paper ↗</a>
+          </p>
+        </article>
+
+        <!-- Duplicate <article> blocks for more projects -->
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Short bio: your focus areas, current role/degree, and what you’re looking for.</p>
+      <ul>
+        <li>MSc Bioinformatics, Uppsala University (2025)</li>
+        <li>Skills: Python, R, Pandas, scikit-learn, Docker, Git, Linux</li>
+        <li>Interests: multi-omics, biomarkers, ML for healthcare</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="year"></span> YOUR NAME. All rights reserved.</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
