@@ -1,208 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Santhosh Rajakumar — Bioinformatician</title>
-  <meta name="description" content="Portfolio — Santhosh Rajakumar. Bioinformatics, multi-omics, ML for healthcare.">
-  <style>
-    /* Simple modern front-page template */
-    :root{
-      --bg:#fbfcfe;--card:#fff;--muted:#6b7280;--accent:#0f766e;--accent-2:#0369a1;--glass:rgba(15,23,42,0.04);
-      --radius:14px;--shadow:0 8px 30px rgba(2,6,23,0.08);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,#f7fbff 0%,var(--bg) 100%);color:#0b1220}
-    header.nav{position:sticky;top:18px;display:flex;justify-content:space-between;align-items:center;margin:0 auto;max-width:1100px;padding:0 20px}
-    .brand{display:flex;gap:14px;align-items:center}
-    .logo{width:44px;height:44px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;box-shadow:0 6px 18px rgba(3,105,161,0.12)}
-    nav a{margin-left:12px;text-decoration:none;color:var(--muted);font-weight:600}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    main{max-width:1100px;margin:36px auto;padding:24px}
-    .hero{display:grid;grid-template-columns:320px 1fr;gap:32px;align-items:center}
-    .profile{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center}
-    .profile img{width:180px;height:180px;border-radius:999px;object-fit:cover;border:6px solid #fff}
-    .name{margin-top:14px;font-size:1.6rem;font-weight:700;color:#05232b}
-    .tag{color:var(--accent-2);font-weight:700;margin:8px 0}
-    .cta{display:flex;gap:12px;margin-top:12px}
-    .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:700}
-    .btn.ghost{background:transparent;border:2px solid var(--accent);color:var(--accent)}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    .intro{background:linear-gradient(180deg,rgba(3,105,161,0.03),transparent);padding:26px;border-radius:var(--radius);box-shadow:var(--shadow)}
-    .intro p{color:var(--muted);line-height:1.6}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    /* Sections */
-    section{margin-top:44px}
-    h2{font-size:1.35rem;margin:0 0 18px;color:#073049}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  <link rel="stylesheet" href="styles.css">
 
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.05)}
-    .project-thumb{height:110px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:flex-end;padding:10px;color:#fff;font-weight:700}
-    .project-meta{margin-top:10px;color:var(--muted);font-size:0.95rem}
-    .tags{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
-    .tag-pill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:0.85rem;color:var(--muted)}
-
-    .skills-list{display:flex;flex-wrap:wrap;gap:10px}
-    .skill{background:linear-gradient(180deg,#fff,#f8fafc);padding:10px 12px;border-radius:10px;border:1px solid rgba(2,6,23,0.04);font-weight:700;color:#042b2d}
-
-    /* contact */
-    .contact-row{display:flex;gap:18px;flex-wrap:wrap}
-    .contact-card{flex:1;min-width:220px}
-
-    footer{margin:44px 0 12px;color:var(--muted);text-align:center}
-
-    /* responsive */
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr;}
-      header.nav{padding:0 14px}
-    }
-
-    /* lightweight mockup wireframe (svg container) */
-    .mockup{display:flex;justify-content:center;margin-top:18px}
-    .mockup svg{max-width:100%;height:auto;border-radius:10px;background:#fff;padding:12px;box-shadow:0 12px 30px rgba(2,6,23,0.06)}
-  </style>
+  <title>Portfolio</title>
 </head>
 <body>
-  <header class="nav">
-    <div class="brand">
-      <div class="logo">SR</div>
-      <div>
-        <div style="font-weight:800">Santhosh Rajakumar</div>
-        <div style="font-size:13px;color:var(--muted)">Bioinformatician • Genomics • ML in Healthcare</div>
-      </div>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">John Doe</a>
     </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:john@example.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
 
   <main>
-    <!-- HERO -->
-    <section class="hero">
-      <aside class="profile">
-        <img src="icons/profile.png" alt="Santhosh Rajakumar">
-        <div class="name">Santhosh Rajakumar</div>
-        <div class="tag">Bioinformatician · M.S. (Uppsala University)</div>
-        <div class="cta">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="files/SanthoshRajakumar_Resume.pdf" target="_blank">Download Resume</a>
-        </div>
-        <div style="margin-top:14px;color:var(--muted);font-size:0.95rem;text-align:center">Uppsala, Sweden • Open to research collaborations & thesis supervision</div>
-      </aside>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm John 👋</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam assumenda est perspiciatis labore quasi, iure dignissimos, libero, omnis sint necessitatibus ad. Hic expedita eligendi tenetur quisquam id quaerat alias cumque, autem voluptatem in iure ut laudantium tempora cupiditate voluptate est nemo impedit, quidem iusto, provident aperiam. Iste, repellat aperiam!</p>
 
-      <div class="intro">
-        <h1 style="margin:0;font-size:1.6rem">I turn biological data into actionable insight</h1>
-        <p style="margin-top:12px">I build reproducible pipelines and apply statistical & machine learning methods to multi-omics data — RNA‑Seq, proteomics, GWAS/TWAS — with a focus on biomarker discovery and translational research. Skilled with Python, R, Nextflow, and HPC environments.</p>
-
-        <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap">
-          <a class="tag-pill" href="https://github.com/SanthoshRajakumar" target="_blank">GitHub</a>
-          <a class="tag-pill" href="https://www.linkedin.com/in/santhosh-rajakumar" target="_blank">LinkedIn</a>
-          <a class="tag-pill" href="mailto:your.email@domain.com">Email</a>
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Testimony</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
         </div>
+      </div>
 
-        <!-- small visual mockup -->
-        <div class="mockup" aria-hidden="true">
-          <!-- simple SVG wireframe illustrating layout (hero + cards) -->
-          <svg width="720" height="200" viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="0" width="720" height="200" rx="8" fill="#f8fafc"/>
-            <rect x="18" y="18" width="140" height="140" rx="8" fill="#ffffff" stroke="#e6eef6"/>
-            <rect x="170" y="18" width="520" height="60" rx="6" fill="#ffffff" stroke="#e6eef6"/>
-            <rect x="170" y="90" width="250" height="60" rx="6" fill="#ffffff" stroke="#e6eef6"/>
-            <rect x="430" y="90" width="260" height="60" rx="6" fill="#ffffff" stroke="#e6eef6"/>
-            <circle cx="90" cy="90" r="6" fill="#cfe8f6"/>
-            <rect x="18" y="164" width="680" height="14" rx="6" fill="#eaf6fb"/>
-          </svg>
-        </div>
+      <div class="headshot">
+        <img src="images/hero-headshot.webp" alt="john doe headshot">
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="card">
-        <p>I am a Master’s student in Bioinformatics at Uppsala University (expected 2025). My research and projects focus on integrating multi-omics datasets, developing reproducible pipelines, and applying machine learning for translational discoveries. I enjoy collaborating with wet-lab researchers to bring computational rigor and reproducibility to biology.</p>
-        <div style="margin-top:12px;color:var(--muted)"><strong>Education:</strong> M.S. Bioinformatics — Uppsala University; B.Tech Biotechnology — SRM Institute</div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="project-thumb">SeqMorph — Sequence Mutation Simulator</div>
-          <div class="project-meta">Python · Biopython · Pandas</div>
-          <div class="tags"><span class="tag-pill">Simulation</span><span class="tag-pill">Python</span></div>
-        </article>
-
-        <article class="card">
-          <div class="project-thumb">Cancer RNA-Seq Pipeline</div>
-          <div class="project-meta">R · DESeq2 · Nextflow</div>
-          <div class="tags"><span class="tag-pill">RNA-Seq</span><span class="tag-pill">Reproducible</span></div>
-        </article>
-
-        <article class="card">
-          <div class="project-thumb">Gleason Classifier (DL)</div>
-          <div class="project-meta">TensorFlow · ResNet</div>
-          <div class="tags"><span class="tag-pill">Deep Learning</span><span class="tag-pill">Medical Imaging</span></div>
-        </article>
-
-        <article class="card">
-          <div class="project-thumb">Yeast Stress RNA-Seq</div>
-          <div class="project-meta">Nextflow · Docker · HISAT2</div>
-          <div class="tags"><span class="tag-pill">Nextflow</span><span class="tag-pill">Docker</span></div>
-        </article>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
       <h2>Skills</h2>
-      <div class="card">
-        <div style="display:flex;gap:24px;flex-wrap:wrap">
-          <div style="flex:1;min-width:220px">
-            <h3 style="margin:0 0 8px 0">Programming & Data</h3>
-            <div class="skills-list"><span class="skill">Python</span><span class="skill">R</span><span class="skill">SQL</span><span class="skill">Bash</span></div>
-          </div>
-          <div style="flex:1;min-width:220px">
-            <h3 style="margin:0 0 8px 0">Bioinformatics</h3>
-            <div class="skills-list"><span class="skill">Nextflow</span><span class="skill">DESeq2</span><span class="skill">GATK</span><span class="skill">Hi-C</span></div>
-          </div>
-          <div style="flex:1;min-width:220px">
-            <h3 style="margin:0 0 8px 0">Cloud & ML</h3>
-            <div class="skills-list"><span class="skill">AWS</span><span class="skill">HPC</span><span class="skill">scikit-learn</span><span class="skill">TensorFlow</span></div>
-          </div>
+      <div class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis iure distinctio quidem aperiam necessitatibus omnis possimus excepturi amet quos rerum? Perferendis repellat natus saepe quaerat quibusdam neque recusandae optio?
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="react logo">
+          <span>React.js</span>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
+    <!-- SECTION 3: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h2>Testimony</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/testimony-headshot.webp">
+          <p>John Doe</p>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+
+        <div class="text">
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, sint repudiandae ratione exercitationem saepe distinctio cumque quaerat nostrum laborum? Rem adipisci natus eos nemo reprehenderit, cumque nostrum enim commodi. Eum, enim vero eveniet doloremque sed veniam. Doloremque explicabo non reprehenderit expedita! Accusamus mollitia repellendus dolorum officiis libero quod deleniti cum."
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
       <h2>Contact</h2>
-      <div class="grid">
-        <div class="card contact-card">
-          <strong>Email</strong>
-          <div style="margin-top:8px;color:var(--muted)">your.email@domain.com</div>
+
+      <div class="group">
+        <div class="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat fugit maiores atque architecto saepe tenetur quasi reiciendis illum sint doloremque alias inventore, asperiores maxime pariatur totam hic assumenda repudiandae, iusto quisquam nisi! Eaque doloremque perspiciatis minus voluptate dicta. A ratione autem dolor iure libero numquam voluptatem nobis laborum et corporis.
         </div>
-        <div class="card contact-card">
-          <strong>LinkedIn</strong>
-          <div style="margin-top:8px;color:var(--muted)"><a href="https://www.linkedin.com/in/santhosh-rajakumar" target="_blank">linkedin.com/in/santhosh-rajakumar</a></div>
-        </div>
-        <div class="card contact-card">
-          <strong>GitHub</strong>
-          <div style="margin-top:8px;color:var(--muted)"><a href="https://github.com/SanthoshRajakumar" target="_blank">github.com/SanthoshRajakumar</a></div>
-        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
-
-    <footer>
-      © 2025 Santhosh Rajakumar — Built with clarity and reproducibility in mind
-    </footer>
-
   </main>
 </body>
 </html>
